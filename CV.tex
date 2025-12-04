@@ -1,0 +1,110 @@
+\documentclass[10pt,a4paper,withhyper]{altacv}
+
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+\usepackage{paracol}
+
+
+\usepackage[default]{opensans}
+
+% Colours
+\definecolor{Charcoal}{HTML}{000000}
+\definecolor{Accent}{HTML}{000000}
+\colorlet{heading}{Accent}
+\colorlet{tagline}{Accent}
+\colorlet{headingrule}{Accent}
+\colorlet{accent}{Accent}
+\colorlet{emphasis}{Charcoal}
+\colorlet{body}{Charcoal}
+
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+
+\begin{document}
+\name{Hannah Mowbray}
+\tagline{Full Stack Software Engineer}
+\personalinfo{
+  \email{hannahmowbray2@gmail.com}
+  \phone{+44 7900 033775}
+  \location{Edinburgh, Scotland}
+  \linkedin{hannah-mowbray-036505212}
+  \github{hmowbray2}
+}
+
+\makecvheader
+
+\AtBeginEnvironment{itemize}{\small}
+\columnratio{0.6}
+\begin{paracol}{2}
+
+% --- Left column ---
+\cvsection{Experience}
+
+\cvevent{Software Engineer}{Lloyds Banking Group}{2024 -- current}{Edinburgh}
+\begin{itemize}
+  \item Deployed a pension transfer tracker into production with over 10,000 customer uses in the first month.
+  \item Presented to the Engineering Leadership Team including the CTO of Scottish Widows.
+\end{itemize}
+
+
+\cvsection{Projects}
+
+\cvevent{Booking System UI}{Dales Cycles Workshop - freelance}{2025}{}
+React + TypeScript UI built from scratch with Vite, integrating with a .NET API and Postgres DB.
+
+\divider
+
+\cvevent{Octobot}{Personal Project}{2024}{}
+Python + Playwright bot deployed to Google Cloud using Cloud Run and Cloud Scheduler.
+
+\cvsection{Education}
+
+\cvevent{PhD Researcher (Incomplete)}{University of Glasgow}{2022 -- 2024}{Glasgow}
+\begin{itemize}
+  \item Automated mask design workflows in Python for semiconductor fabrication.
+  \item Shared code with group to improve throughput and efficiency.
+\end{itemize}
+
+\divider
+
+\cvevent{MSci Chemistry}{University of Nottingham}{2018 -- 2022}{Nottingham}
+\begin{itemize}
+  \item Graduated First Class.
+  \item Final project focused on computational modelling of solvated molecules.
+\end{itemize}
+\switchcolumn
+
+% --- Right column ---
+\cvsection{Certifications}
+\begin{itemize}
+  \item GCP Digital Cloud Leader — Google Cloud, 2024
+  \item Professional Scrum Master I — 2024
+  \item Level 4 Software Engineering Apprenticeship — Distinction
+\end{itemize}
+
+\cvsection{Achievements}
+\begin{itemize}
+  \item Lead the winning team at the Lloyds Reboot Hackathon — London 2025
+  \item Emerging Talent in Tech — Womens ConnecTech (Shortlisted)
+  \item Game Changers — Nominated
+\end{itemize}
+
+\cvsection{Strengths}
+\cvtag{Problem Solving}
+\cvtag{Collaboration}
+\cvtag{Infrastructure}
+\cvtag{Deployment}
+\cvtag{Scalable Architecture}
+\cvtag{Testing}
+\cvtag{Accessibility}
+
+
+\cvsection{Skills}
+\cvtag{React} \cvtag{TypeScript} \cvtag{JavaScript} \cvtag{styled-components}
+\cvtag{Express.js} \cvtag{Postgres} \cvtag{SQL} \cvtag{Python}
+\cvtag{Docker} \cvtag{Kubernetes} \cvtag{Linux/Bash}
+\cvtag{CI/CD (Jenkins, Harness)} \cvtag{Git/GitHub}
+\cvtag{Cloud (GCP, Azure basics)}
+\cvtag{Testing (Jest, Playwright, Cypress)}
+
+\end{paracol}
+\end{document}
